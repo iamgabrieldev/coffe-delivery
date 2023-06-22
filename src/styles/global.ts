@@ -28,4 +28,10 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
+  button {
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
 `

@@ -23,6 +23,11 @@ export const ListContainer = styled.ul`
   .local {
     background-color: ${({ theme }) => theme.colors['purple-light']};
 
+    span {
+      font-size: 0.875rem;
+      color: ${({ theme }) => theme.colors['purple-dark']};
+    }
+
     svg {
       color: ${({ theme }) => theme.colors['purple-dark']};
     }
