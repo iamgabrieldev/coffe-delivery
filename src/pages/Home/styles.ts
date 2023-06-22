@@ -6,16 +6,8 @@ type variant = {
 }
 
 export const ContainerBg = styled.section`
-  width: 100vw;
   background: url(${background});
-`
-
-export const Container = styled.div`
-  max-width: 1080px;
-  margin: 0 auto;
   padding: 96px 0;
-  display: flex;
-
   div {
     h1 {
       font-size: 3rem;
@@ -30,6 +22,12 @@ export const Container = styled.div`
       margin-bottom: 4rem;
     }
   }
+`
+
+export const Container = styled.div`
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
 `
 
 export const CoffeAttributes = styled.div`
@@ -52,4 +50,22 @@ export const CoffeAttributesItem = styled.div<variant>`
       color: white;
     }
   }
+`
+
+export const CoffeContainer = styled.section`
+  width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 0;
+
+  h2 {
+    font-size: 2rem;
+    color: ${({ theme }) => theme.colors['base-subtitle']};
+    margin-bottom: 2rem;
+  }
+`
+
+export const Coffes = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 `

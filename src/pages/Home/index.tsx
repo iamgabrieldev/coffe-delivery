@@ -4,6 +4,8 @@ import * as styled from './styles'
 
 import Header from '../../components/Header'
 import CoffeImg from '../../assets/Imagem.png'
+import { coffes } from '../../data/coffes'
+import Coffe from '../../components/Coffe'
 
 const Home: React.FC = () => {
   return (
@@ -50,6 +52,21 @@ const Home: React.FC = () => {
             </div>
           </styled.Container>
         </styled.ContainerBg>
+        <styled.CoffeContainer>
+          <h2>Nossos Cafés</h2>
+          <styled.Coffes>
+            {coffes.map((coffe) => (
+              <Coffe
+                key={coffe.imageUrl}
+                name={coffe.name}
+                description={coffe.description}
+                price={coffe.price}
+                tags={coffe.tags}
+                url={coffe.imageUrl}
+              />
+            ))}
+          </styled.Coffes>
+        </styled.CoffeContainer>
       </main>
     </>
   )
