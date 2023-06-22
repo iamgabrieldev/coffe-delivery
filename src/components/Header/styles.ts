@@ -4,8 +4,9 @@ export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1080px;
+  max-width: 1080px;
   margin: 2rem auto;
+  padding: 0 0.5rem;
 `
 
 export const ListContainer = styled.ul`
